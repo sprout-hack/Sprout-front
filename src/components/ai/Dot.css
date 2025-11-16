@@ -1,0 +1,21 @@
+.dot-menu {
+    width: 14px;
+    height: 14px;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  
+  .dot-menu::before {
+    content: '';
+    width: 0;
+    height: 0;
+    box-shadow:
+      -3px 0 0 2px #ccc, 3px 0 0 2px #ccc,
+      -3px 6px 0 2px #ccc, 3px 6px 0 2px #ccc,
+      -3px 12px 0 2px #ccc, 3px 12px 0 2px #ccc;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
