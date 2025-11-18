@@ -8,7 +8,7 @@ interface Props{
     modal2: boolean;
     setModal2: React.Dispatch<React.SetStateAction<boolean>>;
 }
-export default function AIPostingBar() {
+export default function DraggablePostBox() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
@@ -19,7 +19,7 @@ export default function AIPostingBar() {
     <div
       className={`
         fixed bottom-10 left-1/2 flex items-center justify-between px-4 
-        w-[449px] h-[45px] rounded-[28px]
+        w-[449px] h-[45px] rounded-sm
         bg-gradient-to-r from-[rgba(160,160,160,0.85)] to-[rgba(180,180,180,0.85)]
         shadow-[0_4px_14px_rgba(0,0,0,0.15)]
         backdrop-blur-sm select-none z-[9999]
@@ -43,7 +43,7 @@ export default function AIPostingBar() {
       <button
         className={`
           bg-[#557AFF] text-white font-semibold text-sm
-          rounded-[10px] px-2 py-2 shadow-[0_2px_6px_rgba(0,0,0,0.2)]
+          rounded-xs px-2 py-2 shadow-[0_2px_6px_rgba(0,0,0,0.2)]
           cursor-pointer w-[79px] h-[33.75px]
         `}
       >
